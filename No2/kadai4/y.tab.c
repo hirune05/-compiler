@@ -88,6 +88,7 @@
 /* Copy the first part of user declarations.  */
 #line 1 "ex1.y"
 
+    #include <stdio.h>
     int yylex();
     void yyerror( const char *s);
 
@@ -123,7 +124,7 @@ typedef int YYSTYPE;
 
 
 /* Line 216 of yacc.c.  */
-#line 127 "y.tab.c"
+#line 128 "y.tab.c"
 
 #ifdef short
 # undef short
@@ -409,8 +410,8 @@ static const yytype_int8 yyrhs[] =
 /* YYRLINE[YYN] -- source line where rule number YYN was defined.  */
 static const yytype_uint8 yyrline[] =
 {
-       0,     9,     9,    12,    13,    16,    19,    20,    21,    24,
-      25,    26,    29
+       0,    10,    10,    13,    14,    17,    20,    21,    22,    25,
+      26,    27,    30
 };
 #endif
 
@@ -1314,43 +1315,43 @@ yyreduce:
   switch (yyn)
     {
         case 5:
-#line 16 "ex1.y"
+#line 17 "ex1.y"
     {printf("%d\n", (yyvsp[(1) - (2)]));}
     break;
 
   case 6:
-#line 19 "ex1.y"
+#line 20 "ex1.y"
     {(yyval) = (yyvsp[(1) - (3)]) + (yyvsp[(3) - (3)]);}
     break;
 
   case 7:
-#line 20 "ex1.y"
+#line 21 "ex1.y"
     {(yyval) = (yyvsp[(1) - (3)]) - (yyvsp[(3) - (3)]);}
     break;
 
   case 9:
-#line 24 "ex1.y"
+#line 25 "ex1.y"
     {(yyval) = (yyvsp[(1) - (3)]) * (yyvsp[(3) - (3)]);}
     break;
 
   case 10:
-#line 25 "ex1.y"
+#line 26 "ex1.y"
     {(yyval) = (yyvsp[(1) - (3)]) / (yyvsp[(3) - (3)]);}
     break;
 
   case 11:
-#line 26 "ex1.y"
+#line 27 "ex1.y"
     { (yyval) = (yyvsp[(1) - (1)]); }
     break;
 
   case 12:
-#line 29 "ex1.y"
+#line 30 "ex1.y"
     { (yyval) = (yyvsp[(1) - (1)]); }
     break;
 
 
 /* Line 1267 of yacc.c.  */
-#line 1354 "y.tab.c"
+#line 1355 "y.tab.c"
       default: break;
     }
   YY_SYMBOL_PRINT ("-> $$ =", yyr1[yyn], &yyval, &yyloc);
@@ -1564,7 +1565,7 @@ yyreturn:
 }
 
 
-#line 32 "ex1.y"
+#line 33 "ex1.y"
 
 
 #include "lex.yy.c"
